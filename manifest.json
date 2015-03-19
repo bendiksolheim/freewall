@@ -1,0 +1,21 @@
+{
+	"manifest_version" : 2,
+	"name": "Freewall",
+	"description": "Ever been hit by a paywall? This extension pretends as if the request came from facebook, which often gets you around it and lets you read the article anyway",
+	"version": "0.1",
+	"browser_action": {
+		"default_icon": "icon.png"
+	},
+	"background": {
+		"scripts": [
+			"freewall.js"
+		]
+	},
+	"permissions": [
+		"activeTab",
+		"tabs",
+		"webRequest",
+		"webRequestBlocking",
+		"*://*/*"
+	]
+}
